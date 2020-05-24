@@ -1,5 +1,5 @@
 {
-  "name": "certcity",
+  "name": "certcity-server",
   "description": "",
   "version": "",
   "private": true,
@@ -7,10 +7,8 @@
     "test": "env NODE_ENV=test mocha tests/unit-tests --recursive",
     "cover": "env NODE_ENV=test istanbul cover _mocha tests/unit-tests --recursive",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
-    "start-server": "env NODE_ENV=production forever -o ./app/.blueprint/logs/output.log -e ./app/.blueprint/logs/error.log start ./app/index.js",
-    "stop-server": "env NODE_ENV=production forever stop app/index.js",
-    "install-service": "sudo -s forever-service install certcity_d --script ./app/index.js",
-    "uninstall-service": "sudo -s forever-service delete certcity_d"
+    "start-server": "node ./app/index.js",
+    "stop-server": "node stop ./app/index.js"
   },
   "dependencies": {
     "@onehilltech/blueprint": "^4.21.0",
@@ -22,7 +20,7 @@
   "devDependencies": {
     "@onehilltech/blueprint-testing": "^4.21.0"
   },
-  "license": "",
+  "license": "MIT",
   "engines": {
     "node": ">=6.0.0",
     "npm": ">=3.0.0"

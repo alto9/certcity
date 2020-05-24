@@ -1,0 +1,15 @@
+{
+  "name": "certcity-gui",
+  "description": "",
+  "version": "",
+  "private": true,
+  "license": "MIT",
+  "main": "gui.js",
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
