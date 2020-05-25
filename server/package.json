@@ -23,7 +23,7 @@
   "license": "MIT",
   "engines": {
     "node": ">=6.0.0",
-    "npm": ">=3.0.0"
+    "npm": ">=6.13.4"
   },
   "keywords": [
     "blueprint"
