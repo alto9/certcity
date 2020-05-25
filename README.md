@@ -26,6 +26,26 @@ If you'd rather run it in Node locally, you will need to have Node and NPM insta
 >cd server && node ./app/index.js
 ```
 
+### Authentication and Authorization with AWS
+
+Currently, the docker-compose.yml is going to map your ~/.aws directory into the container, so whatever default profile you have locally when you run the compose, that's who the service will authenticate as.
+
+```
+volumes:
+      - ~/.aws/:/root/.aws:ro
+```
+
+This utility is meant to run on your workstation, if run on a server then a different authentication mechanism would need to be used.
+
+### Using the API
+
+By default the API will run on port 5000 and uses no authentication beyond the AWS profile credentials it is running with. Example request to get the first page of ACM certificates, 50 at a time.
+
+```
+curl --location --request GET 'http://localhost:5000/api/certificates/?page=1&page_size=50'
+```
+
+
 ## Built With
 
 * [node](https://nodejs.org/) - The server software used
