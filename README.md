@@ -8,48 +8,32 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+CertCity comes with a docker-compose.yml file for launching the API and Web UI.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+CertCity is meant to run in Docker unless you are developing it.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+You shouldn't need to install any dependencies this way, if you have Docker and Docker Compose, you should be able to run CertCity.
 
 ```
-until finished
+>docker-compose up
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+If you'd rather run it in Node locally, you will need to have Node and NPM installed, but it's still easy to launch.
+
+```
+>cd server && node ./app/index.js
+```
 
 ## Built With
 
 * [node](https://nodejs.org/) - The server software used
 * [blueprint](https://blueprint.onehilltech.com/) - The server framework
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
 * **Derrick Anderson** - *Initial work* - [GoldUniform](https://github.com/GoldUniform)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
