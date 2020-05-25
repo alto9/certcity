@@ -39,11 +39,15 @@ This utility is meant to run on your workstation, if run on a server then a diff
 
 ### Using the API
 
-By default the API will run on port 5000 and uses no authentication beyond the AWS profile credentials it is running with. Example request to get the first page of ACM certificates, 50 at a time.
+By default the API will run on port 5000 and uses no authentication beyond the AWS profile credentials it is running with.
+
+#### GET /certificates
 
 ```
 curl --location --request GET 'http://localhost:5000/api/certificates/?page=1&page_size=50'
 ```
+
+`getAll` requests like this are paged, all accepting a `page` and a `page_size` variable.
 
 
 ## Built With
