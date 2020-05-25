@@ -52,12 +52,12 @@ module.exports = Service.extend ({
                 
             }
             
-            if (response.data.NextToken) {
+            /*if (response.data.NextToken) {
                 this._initCerts(response.data.NextToken) 
             } else {
                 this._certFullLoad()
-            }
-            //this._certFullLoad()
+            }*/
+            this._certFullLoad()
         }.bind(this)).on('error', function(response){
             console.log(response);
         });

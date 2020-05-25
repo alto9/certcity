@@ -15,9 +15,21 @@ module.exports = ResourceController.extend ({
   // query all the resources
   getAll () {
     return Action.extend ({
+      // express-validator schema
+      schema: {
+        [this.page]: {
+          in: ['query'],
+          optional: true,
+        },
+        [this.page_size]: {
+          in: ['query'],
+          optional: true,
+        },
+      },
       execute (req, res) {
         const data = this.controller.certificates.certificates;
-        res.status (200).json ({ data });
+        var sliced = data.slice((req.query.page - 1) * req.query.page_size, req.query.page * req.query.page_size);
+        res.status (200).json ({ sliced });
       }
     })
   },
