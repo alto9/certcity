@@ -49,6 +49,13 @@ curl --location --request GET 'http://localhost:5000/api/certificates/?page=1&pa
 
 `getAll` requests like this are paged, all accepting a `page` and a `page_size` variable.
 
+#### GET /certificates
+
+```
+curl --location --request GET 'http://localhost:5000/api/certificates/<id>'
+```
+
+The CertCity API uses just the last GUID portion of the ARN, just after the "/" as the ID when working with certificates. The full ARN is still used in requests to AWS when required.
 
 ## Built With
 
