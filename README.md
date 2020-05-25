@@ -49,7 +49,7 @@ curl --location --request GET 'http://localhost:5000/api/certificates/?page=1&pa
 
 `getAll` requests like this are paged, all accepting a `page` and a `page_size` variable.
 
-#### GET /certificates
+#### GET /certificates/<id>
 
 ```
 curl --location --request GET 'http://localhost:5000/api/certificates/<id>'
@@ -61,6 +61,7 @@ The CertCity API uses just the last GUID portion of the ARN, just after the "/" 
 
 * [node](https://nodejs.org/) - The server software used
 * [blueprint](https://blueprint.onehilltech.com/) - The server framework
+* [docker](https://docker.io/) - Because Containers
 
 ## Authors
 
