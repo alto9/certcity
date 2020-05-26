@@ -1,6 +1,6 @@
 # CertCity
 
-CertCity is a node.js API and web application for managing large amounts of AWS ACM certificates. If you have a larger than typical amount of domains/certificates, you have probably noticed that the ACM Console interface has some problems dealing with large amounts of certificates. The ACM and EC2 Load Balancer Listener interface struggle to support large amounts of ACM certificates. CertCity aims to make management of ACM certificates via API or UI much easier by pulling all the certificates, load balancers, and listeners from your AWS account and providing both a UI and API for managing these resources easily.
+CertCity is a node.js API and web application for managing large amounts of AWS ACM certificates. If you have a larger than typical amount of domains/certificates, you have probably noticed that the ACM Console interface has some problems dealing with large amounts of certificates. The ACM and EC2 Load Balancer Listener interfaces struggle to support large amounts of ACM certificates. CertCity aims to make management of ACM certificates via API or UI much easier by pulling all the certificates, load balancers, and listeners from your AWS account and providing both a UI and API for managing these resources easily.
 
 ## Getting Started
 
