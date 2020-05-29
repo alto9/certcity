@@ -66,8 +66,9 @@ The CertCity API uses just the last GUID portion of the ARN, just after the "/" 
 ## Built With
 
 * [node](https://nodejs.org/) - Node Rocks
-* [blueprint](https://blueprint.onehilltech.com/) - Light-weight server framework
+* [blueprint](https://blueprint.onehilltech.com/) - Server REST Framework
 * [docker](https://docker.com/) - Because Containers
+* [vue.js](https://vuejs.org/) - GUI UI Framework
 
 ## Authors
 

@@ -28,8 +28,9 @@ module.exports = ResourceController.extend ({
       },
       execute (req, res) {
         const data = this.controller.certificates.certificates;
-        var sliced = data.slice((req.query.page - 1) * req.query.page_size, req.query.page * req.query.page_size);
-        res.status (200).json ({ sliced });
+        var page = data.slice((req.query.page - 1) * req.query.page_size, req.query.page * req.query.page_size);
+
+        res.status (200).json ({ page });
       }
     })
   },
