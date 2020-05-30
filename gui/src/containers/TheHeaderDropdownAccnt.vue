@@ -1,68 +1,68 @@
 <template>
-  <CDropdown
+  <ADropdown
     inNav
     class="c-header-nav-items"
     placement="bottom-end"
     add-menu-classes="pt-0"
   >
     <template #toggler>
-      <CHeaderNavLink>
+      <AHeaderNavLink>
         <div class="c-avatar">
           <img
             src="img/avatars/6.jpg"
             class="c-avatar-img "
           />
         </div>
-      </CHeaderNavLink>
+      </AHeaderNavLink>
     </template>
-    <CDropdownHeader tag="div" class="text-center" color="light">
+    <ADropdownHeader tag="div" class="text-center" color="light">
       <strong>Account</strong>
-    </CDropdownHeader>
-    <CDropdownItem>
+    </ADropdownHeader>
+    <ADropdownItem>
       <CIcon name="cil-bell"/> Updates
-      <CBadge color="info" class="ml-auto">{{ itemsCount }}</CBadge>
-    </CDropdownItem>
-    <CDropdownItem>
+      <ABadge color="info" class="ml-auto">{{ itemsCount }}</ABadge>
+    </ADropdownItem>
+    <ADropdownItem>
       <CIcon name="cil-envelope-open" /> Messages
-      <CBadge color="success" class="ml-auto">{{ itemsCount }}</CBadge>
-    </CDropdownItem>
-    <CDropdownItem>
+      <ABadge color="success" class="ml-auto">{{ itemsCount }}</ABadge>
+    </ADropdownItem>
+    <ADropdownItem>
       <CIcon name="cil-task" /> Tasks
-      <CBadge color="danger" class="ml-auto">{{ itemsCount }}</CBadge>
-    </CDropdownItem>
-    <CDropdownItem>
+      <ABadge color="danger" class="ml-auto">{{ itemsCount }}</ABadge>
+    </ADropdownItem>
+    <ADropdownItem>
       <CIcon name="cil-comment-square" /> Comments
-      <CBadge color="warning" class="ml-auto">{{ itemsCount }}</CBadge>
-    </CDropdownItem>
-    <CDropdownHeader
+      <ABadge color="warning" class="ml-auto">{{ itemsCount }}</ABadge>
+    </ADropdownItem>
+    <ADropdownHeader
       tag="div"
       class="text-center"
       color="light"
     >
       <strong>Settings</strong>
-    </CDropdownHeader>
-    <CDropdownItem>
+    </ADropdownHeader>
+    <ADropdownItem>
       <CIcon name="cil-user" /> Profile
-    </CDropdownItem>
-    <CDropdownItem>
+    </ADropdownItem>
+    <ADropdownItem>
       <CIcon name="cil-settings" /> Settings
-    </CDropdownItem>
-    <CDropdownItem>
+    </ADropdownItem>
+    <ADropdownItem>
       <CIcon name="cil-dollar" /> Payments
-      <CBadge color="secondary" class="ml-auto">{{ itemsCount }}</CBadge>
-    </CDropdownItem>
-    <CDropdownItem>
+      <ABadge color="secondary" class="ml-auto">{{ itemsCount }}</ABadge>
+    </ADropdownItem>
+    <ADropdownItem>
       <CIcon name="cil-file" /> Projects
-      <CBadge color="primary" class="ml-auto">{{ itemsCount }}</CBadge>
-    </CDropdownItem>
-    <CDropdownDivider/>
-    <CDropdownItem>
+      <ABadge color="primary" class="ml-auto">{{ itemsCount }}</ABadge>
+    </ADropdownItem>
+    <ADropdownDivider/>
+    <ADropdownItem>
       <CIcon name="cil-shield-alt" /> Lock Account
-    </CDropdownItem>
-    <CDropdownItem>
+    </ADropdownItem>
+    <ADropdownItem>
       <CIcon name="cil-lock-locked" /> Logout
-    </CDropdownItem>
-  </CDropdown>
+    </ADropdownItem>
+  </ADropdown>
 </template>
 
 <script>

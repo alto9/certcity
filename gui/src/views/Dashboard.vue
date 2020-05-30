@@ -1,19 +1,19 @@
 <template>
   <div>
     <WidgetsDropdown/>
-    <CCard>
-      <CCardBody>
-        <CRow>
-          <CCol sm="5">
+    <ACard>
+      <ACardBody>
+        <ARow>
+          <ACol sm="5">
             <h4 id="traffic" class="card-title mb-0">Traffic</h4>
             <div class="small text-muted">November 2017</div>
-          </CCol>
-          <CCol sm="7" class="d-none d-md-block">
-            <CButton color="primary" class="float-right">
+          </ACol>
+          <ACol sm="7" class="d-none d-md-block">
+            <AButton color="primary" class="float-right">
               <CIcon name="cil-cloud-download"/>
-            </CButton>
-            <CButtonGroup class="float-right mr-3">
-              <CButton
+            </AButton>
+            <AButtonGroup class="float-right mr-3">
+              <AButton
                 color="outline-secondary"
                 v-for="(value, key) in ['Day', 'Month', 'Year']"
                 :key="key"
@@ -22,90 +22,90 @@
                 @click="selected = value"
               >
                 {{value}}
-              </CButton>
-            </CButtonGroup>
-          </CCol>
-        </CRow>
+              </AButton>
+            </AButtonGroup>
+          </ACol>
+        </ARow>
         <MainChartExample style="height:300px;margin-top:40px;"/>
-      </CCardBody>
-      <CCardFooter>
-        <CRow class="text-center">
-          <CCol md sm="12" class="mb-sm-2 mb-0">
+      </ACardBody>
+      <ACardFooter>
+        <ARow class="text-center">
+          <ACol md sm="12" class="mb-sm-2 mb-0">
             <div class="text-muted">Visits</div>
             <strong>29.703 Users (40%)</strong>
-            <CProgress
+            <AProgress
               class="progress-xs mt-2"
               :precision="1"
               color="success"
               :value="40"
             />
-          </CCol>
-          <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
+          </ACol>
+          <ACol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
             <div class="text-muted">Unique</div>
             <strong>24.093 Users (20%)</strong>
-            <CProgress
+            <AProgress
               class="progress-xs mt-2"
               :precision="1"
               color="info"
               :value="20"
             />
-          </CCol>
-          <CCol md sm="12" class="mb-sm-2 mb-0">
+          </ACol>
+          <ACol md sm="12" class="mb-sm-2 mb-0">
             <div class="text-muted">Pageviews</div>
             <strong>78.706 Views (60%)</strong>
-            <CProgress
+            <AProgress
               class="progress-xs mt-2"
               :precision="1"
               color="warning"
               :value="60"
             />
-          </CCol>
-          <CCol md sm="12" class="mb-sm-2 mb-0">
+          </ACol>
+          <ACol md sm="12" class="mb-sm-2 mb-0">
             <div class="text-muted">New Users</div>
             <strong>22.123 Users (80%)</strong>
-            <CProgress
+            <AProgress
               class="progress-xs mt-2"
               :precision="1"
               color="danger"
               :value="80"
             />
-          </CCol>
-          <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
+          </ACol>
+          <ACol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
             <div class="text-muted">Bounce Rate</div>
             <strong>Average Rate (40.15%)</strong>
-            <CProgress
+            <AProgress
               class="progress-xs mt-2"
               :precision="1"
               :value="40"
             />
-          </CCol>
-        </CRow>
-      </CCardFooter>
-    </CCard>
+          </ACol>
+        </ARow>
+      </ACardFooter>
+    </ACard>
     <WidgetsBrand/>
-    <CRow>
-      <CCol md="12">
-        <CCard>
-          <CCardHeader>
+    <ARow>
+      <ACol md="12">
+        <ACard>
+          <ACardHeader>
             Traffic &amp; Sales
-          </CCardHeader>
-          <CCardBody>
-            <CRow>
-              <CCol sm="12" lg="6">
-                <CRow>
-                  <CCol sm="6">
-                    <CCallout color="info">
+          </ACardHeader>
+          <ACardBody>
+            <ARow>
+              <ACol sm="12" lg="6">
+                <ARow>
+                  <ACol sm="6">
+                    <ACallout color="info">
                       <small class="text-muted">New Clients</small><br>
                       <strong class="h4">9,123</strong>
-                    </CCallout>
-                  </CCol>
-                  <CCol sm="6">
-                    <CCallout color="danger">
+                    </ACallout>
+                  </ACol>
+                  <ACol sm="6">
+                    <ACallout color="danger">
                       <small class="text-muted">Recurring Clients</small><br>
                       <strong class="h4">22,643</strong>
-                    </CCallout>
-                  </CCol>
-                </CRow>
+                    </ACallout>
+                  </ACol>
+                </ARow>
                 <hr class="mt-0">
                 <div class="progress-group mb-4">
                   <div class="progress-group-prepend">
@@ -114,12 +114,12 @@
                     </span>
                   </div>
                   <div class="progress-group-bars">
-                    <CProgress
+                    <AProgress
                       class="progress-xs"
                       color="info"
                       :value="34"
                     />
-                    <CProgress
+                    <AProgress
                       class="progress-xs"
                       color="danger"
                       :value="78"
@@ -133,12 +133,12 @@
                     </span>
                   </div>
                   <div class="progress-group-bars">
-                    <CProgress
+                    <AProgress
                       class="progress-xs"
                       :value="56"
                       color="info"
                     />
-                    <CProgress
+                    <AProgress
                       class="progress-xs"
                       :value="94"
                       color="danger"
@@ -152,12 +152,12 @@
                     </span>
                   </div>
                   <div class="progress-group-bars">
-                    <CProgress
+                    <AProgress
                       class="progress-xs"
                       :value="12"
                       color="info"
                     />
-                    <CProgress
+                    <AProgress
                       class="progress-xs"
                       :value="67"
                       color="danger"
@@ -171,12 +171,12 @@
                     </span>
                   </div>
                   <div class="progress-group-bars">
-                    <CProgress
+                    <AProgress
                       class="progress-xs"
                       :value="43"
                       color="info"
                     />
-                    <CProgress
+                    <AProgress
                       class="progress-xs"
                       :value="91"
                       color="danger"
@@ -190,12 +190,12 @@
                     </span>
                   </div>
                   <div class="progress-group-bars">
-                    <CProgress
+                    <AProgress
                       class="progress-xs"
                       :value="22"
                       color="info"
                     />
-                    <CProgress
+                    <AProgress
                       class="progress-xs"
                       :value="73"
                       color="danger"
@@ -209,12 +209,12 @@
                     </span>
                   </div>
                   <div class="progress-group-bars">
-                    <CProgress
+                    <AProgress
                       class="progress-xs"
                       :value="53"
                       color="info"
                     />
-                    <CProgress
+                    <AProgress
                       class="progress-xs"
                       :value="82"
                       color="danger"
@@ -228,12 +228,12 @@
                     </span>
                   </div>
                   <div class="progress-group-bars">
-                    <CProgress
+                    <AProgress
                       class="progress-xs"
                       :value="9"
                       color="info"
                     />
-                    <CProgress
+                    <AProgress
                       class="progress-xs"
                       :value="69"
                       color="danger"
@@ -242,29 +242,29 @@
                 </div>
                 <div class="legend text-center">
                   <small>
-                    <sup><CBadge shape="pill" color="info">&nbsp;</CBadge></sup>
+                    <sup><ABadge shape="pill" color="info">&nbsp;</ABadge></sup>
                     New clients
                     &nbsp;&nbsp;
-                    <sup><CBadge shape="pill" color="danger">&nbsp;</CBadge></sup>
+                    <sup><ABadge shape="pill" color="danger">&nbsp;</ABadge></sup>
                     Recurring clients
                   </small>
                 </div>
-              </CCol>
-              <CCol sm="12" lg="6">
-                <CRow>
-                  <CCol sm="6">
-                    <CCallout color="warning">
+              </ACol>
+              <ACol sm="12" lg="6">
+                <ARow>
+                  <ACol sm="6">
+                    <ACallout color="warning">
                       <small class="text-muted">Pageviews</small><br>
                       <strong class="h4">78,623</strong>
-                    </CCallout>
-                  </CCol>
-                  <CCol sm="6">
-                    <CCallout color="success">
+                    </ACallout>
+                  </ACol>
+                  <ACol sm="6">
+                    <ACallout color="success">
                       <small class="text-muted">Organic</small><br>
                       <strong class="h4">49,123</strong>
-                    </CCallout>
-                  </CCol>
-                </CRow>
+                    </ACallout>
+                  </ACol>
+                </ARow>
                 <hr class="mt-0">
                 <ul class="horizontal-bars type-2">
                   <div class="progress-group">
@@ -274,7 +274,7 @@
                       <span class="ml-auto font-weight-bold">43%</span>
                     </div>
                     <div class="progress-group-bars">
-                      <CProgress
+                      <AProgress
                         class="progress-xs"
                         :value="43"
                         color="warning"
@@ -288,7 +288,7 @@
                       <span class="ml-auto font-weight-bold">37%</span>
                     </div>
                     <div class="progress-group-bars">
-                      <CProgress
+                      <AProgress
                         class="progress-xs"
                         :value="37"
                         color="warning"
@@ -304,7 +304,7 @@
                       </span>
                     </div>
                     <div class="progress-group-bars">
-                      <CProgress
+                      <AProgress
                         class="progress-xs"
                         :value="56"
                         color="success"
@@ -324,7 +324,7 @@
                       </span>
                     </div>
                     <div class="progress-group-bars">
-                      <CProgress
+                      <AProgress
                         class="progress-xs"
                         :value="15"
                         color="success"
@@ -344,7 +344,7 @@
                       </span>
                     </div>
                     <div class="progress-group-bars">
-                      <CProgress
+                      <AProgress
                         class="progress-xs"
                         :value="11"
                         color="success"
@@ -364,7 +364,7 @@
                       </span>
                     </div>
                     <div class="progress-group-bars">
-                      <CProgress
+                      <AProgress
                         class="progress-xs"
                         :value="8"
                         color="success"
@@ -372,15 +372,15 @@
                     </div>
                   </div>
                   <div class="divider text-center">
-                    <CButton color="link" size="sm" class="text-muted">
+                    <AButton color="link" size="sm" class="text-muted">
                       <CIcon name="cil-options"/>
-                    </CButton>
+                    </AButton>
                   </div>
                 </ul>
-              </CCol>
-            </CRow>
+              </ACol>
+            </ARow>
             <br/>
-            <CDataTable
+            <ADataTable
               class="mb-0 table-outline"
               hover
               :items="tableItems"
@@ -425,7 +425,7 @@
                     <small class="text-muted">{{item.usage.period}}</small>
                   </div>
                 </div>
-                <CProgress
+                <AProgress
                   class="progress-xs"
                   v-model="item.usage.value"
                   :color="color(item.usage.value)"
@@ -445,25 +445,25 @@
                 <div class="small text-muted">Last login</div>
                 <strong>{{item.activity}}</strong>
               </td>
-            </CDataTable>
-          </CCardBody>
-        </CCard>
-      </CCol>
-    </CRow>
+            </ADataTable>
+          </ACardBody>
+        </ACard>
+      </ACol>
+    </ARow>
   </div>
 </template>
 
 <script>
-import MainChartExample from './charts/MainChartExample'
-import WidgetsDropdown from './widgets/WidgetsDropdown'
-import WidgetsBrand from './widgets/WidgetsBrand'
+//import MainChartExample from './charts/MainChartExample'
+//import WidgetsDropdown from './widgets/WidgetsDropdown'
+//import WidgetsBrand from './widgets/WidgetsBrand'
 
 export default {
   name: 'Dashboard',
   components: {
-    MainChartExample,
-    WidgetsDropdown,
-    WidgetsBrand
+    //MainChartExample,
+    //WidgetsDropdown,
+    //WidgetsBrand
   },
   data () {
     return {

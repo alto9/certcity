@@ -1,19 +1,19 @@
 <template>
   <div class="c-app">
     <TheSidebar/>
-    <CWrapper>
+    <AWrapper>
       <TheHeader/>
       <div class="c-body">
         <main class="c-main">
-          <CContainer fluid>
+          <AContainer fluid>
             <transition name="fade">
               <router-view></router-view>
             </transition>
-          </CContainer>
+          </AContainer>
         </main>
         <TheFooter/>
       </div>
-    </CWrapper>
+    </AWrapper>
   </div>
 </template>
 

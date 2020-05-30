@@ -1,19 +1,19 @@
 <template>
   <div>
-    <CRow>
-      <CCol lg="12">
-        <CTableWrapper :items="certificates" :fields="fields">
+    <ARow>
+      <ACol lg="12">
+        <ATableWrapper :items="certificates" :fields="fields" :itemsperpage="100" :small="true">
           <template #header>
             <CIcon name="cil-grid"/> All Certificates
           </template>
-        </CTableWrapper>
-      </CCol>
-    </CRow>
+        </ATableWrapper>
+      </ACol>
+    </ARow>
   </div>
 </template>
 
 <script>
-import CTableWrapper from '../../components/Table.vue'
+import ATableWrapper from '../../components/Table.vue'
 
 import axios from 'axios'
 import VueAxios from 'vue-axios'
@@ -29,31 +29,30 @@ export default {
   data() {
     return {
       certificates: [],
-      fields: ['arn', 'domainName', 'issuedat', 'syncstatus', 'status', 'RenewalEligibility']
+      fields: ['ARN', 'Domain Name', 'Issued At', 'Sync', 'Status', 'Renewal Eligibility']
     }
   },
   name: 'Certificates',
-  components: { CTableWrapper },
+  components: { ATableWrapper },
   methods: {
     async getCertificates() {
 
       const certConfig = {
         method: 'get',
-        url: 'http://localhost:5000/api/certificates/?page=1&page_size=100'
+        url: 'http://localhost:5000/api/certificates/?page=1&page_size=1000'
       }
       const response = await axios(certConfig);
  
-      //this is here until i can figure out how to show a nested object for a column
       for(var cert in response.data.page){
-        var res = response.data.page[cert]
+        let res = response.data.page[cert]
 
         this.certificates.push({
-          "arn": res.attributes.CertificateArn,
-          "domainName": res.attributes.DomainName,
-          "issuedat": res.attributes.IssuedAt,
-          "syncstatus": res.status,
-          "status": res.attributes.Status,
-          "RenewalEligibility": res.attributes.RenewalEligibility
+          "ARN": res.attributes.CertificateArn,
+          "Domain Name": res.attributes.DomainName,
+          "Issued At": res.attributes.IssuedAt,
+          "Sync": res.status,
+          "Status": res.attributes.Status,
+          "Renewal Eligibility": res.attributes.RenewalEligibility
         })
       }
     }

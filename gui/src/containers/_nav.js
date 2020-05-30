@@ -1,9 +1,9 @@
 export default [
   {
-    _name: 'CSidebarNav',
+    _name: 'ASidebarNav',
     _children: [
       {
-        _name: 'CSidebarNavItem',
+        _name: 'ASidebarNavItem',
         name: 'Dashboard',
         to: '/dashboard',
         icon: 'cil-speedometer',
@@ -13,13 +13,13 @@ export default [
         }
       },
       {
-        _name: 'CSidebarNavItem',
+        _name: 'ASidebarNavItem',
         name: 'Certificates',
         to: '/certificates/list',
         icon: 'cil-shield-alt'
       },
       {
-        _name: 'CSidebarNavItem',
+        _name: 'ASidebarNavItem',
         name: 'Load Balancers',
         to: '/loadbalancers/list',
         icon: 'cil-cloud-download'

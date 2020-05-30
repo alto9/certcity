@@ -1,11 +1,11 @@
 <template>
-  <CSidebar 
+  <ASidebar 
     fixed 
     :minimize="minimize"
     :show="show"
     @update:show="(value) => $store.commit('set', ['sidebarShow', value])"
   >
-    <CSidebarBrand class="d-md-down-none" to="/">
+    <ASidebarBrand class="d-md-down-none" to="/">
       <CIcon 
         class="c-sidebar-brand-full" 
         name="logo" 
@@ -20,14 +20,14 @@
         :height="35" 
         viewBox="0 0 110 134"
       />
-    </CSidebarBrand>
+    </ASidebarBrand>
 
-    <CRenderFunction flat :content-to-render="$options.nav"/>
-    <CSidebarMinimizer
+    <ARenderFunction flat :content-to-render="$options.nav"/>
+    <ASidebarMinimizer
       class="d-md-down-none"
       @click.native="$store.commit('set', ['sidebarMinimize', !minimize])"
     />
-  </CSidebar>
+  </ASidebar>
 </template>
 
 <script>

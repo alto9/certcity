@@ -1,12 +1,12 @@
 <template>
-  <CCard>
-    <CCardHeader>
+  <ACard>
+    <ACardHeader>
       <slot name="header">
         <CIcon name="cil-grid"/> {{caption}}
       </slot>
-    </CCardHeader>
-    <CCardBody>
-      <CDataTable
+    </ACardHeader>
+    <ACardBody>
+      <ADataTable
         :hover="hover"
         :striped="striped"
         :bordered="bordered"
@@ -14,18 +14,18 @@
         :fixed="fixed"
         :items="items"
         :fields="fields"
-        :items-per-page="small ? 10 : 5"
+        :items-per-page="itemsperpage"
         :dark="dark"
         pagination
       >
         <template #status="{item}">
           <td>
-            <CBadge :color="getBadge(item.status)">{{item.status}}</CBadge>
+            <ABadge :color="getBadge(item.status)">{{item.status}}</ABadge>
           </td>
         </template>
-      </CDataTable>
-    </CCardBody>
-  </CCard>
+      </ADataTable>
+    </ACardBody>
+  </ACard>
 </template>
 
 <script>
@@ -48,7 +48,8 @@ export default {
     bordered: Boolean,
     small: Boolean,
     fixed: Boolean,
-    dark: Boolean
+    dark: Boolean,
+    itemsperpage: Number
   },
   methods: {
     getBadge (status) {

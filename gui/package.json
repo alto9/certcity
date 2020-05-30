@@ -1,21 +1,21 @@
 {
-  "name": "@coreui/coreui-free-vue-admin-template",
-  "version": "3.0.2",
-  "description": "Open Source Bootstrap Admin Template",
+  "name": "@alto9/certcity",
+  "version": "0.0.1",
+  "description": "CertCity AWS Certificate Manager",
   "author": {
     "name": "CoreUI",
-    "url": "https://coreui.io",
-    "github": "https://github.com/coreui",
-    "twitter": "https://twitter.com/core_ui"
+    "url": "https://alto9.com",
+    "github": "https://github.com/alto9",
+    "twitter": "https://twitter.com/alto9cloud"
   },
   "contributors": [
     {
-      "name": "CoreUI Team",
-      "url": "https://github.com/orgs/coreui/people"
+      "name": "Alto9 Team",
+      "url": "https://github.com/orgs/alto9/people"
     }
   ],
-  "homepage": "http://coreui.io",
-  "copyright": "Copyright 2020 creativeLabs Łukasz Holeczek",
+  "homepage": "https://www.alto9.com",
+  "copyright": "Copyright 2020 Alto9",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -30,7 +30,7 @@
     "@coreui/coreui": "^3.0.0",
     "@coreui/icons": "^1.0.1",
     "@coreui/utils": "^1.2.4",
-    "@coreui/vue": "^3.0.6",
+    "@alto9/vue": "https://github.com/alto9/alto9-vue#master",
     "@coreui/vue-chartjs": "^1.0.5",
     "axios": "^0.19.2",
     "regenerator-runtime": "^0.13.5",

@@ -21,7 +21,6 @@ module.exports = Service.extend ({
     init () {
         console.log("Initializing Certificate Service")
         this._super.call (this, ...arguments);
-        console.log(AWS.config.credentials);
         this._initCerts();
 
     },
@@ -56,7 +55,7 @@ module.exports = Service.extend ({
             } else {
                 this._certFullLoad()
             }
-            //this._certFullLoad()
+
         }.bind(this)).on('error', function(response){
             console.log(response);
         });
@@ -69,11 +68,11 @@ module.exports = Service.extend ({
     _certFullLoad() {
         for(var certificate in this._certificates){
 
-            var params = {
+            let params = {
                 CertificateArn: this._certificates[certificate].attributes.CertificateArn
             };
 
-            var request = new AWS.ACM().describeCertificate(params);//request certificates
+            let request = new AWS.ACM().describeCertificate(params);
 
             let thisCertificate = this._certificates[certificate];
 
@@ -83,7 +82,6 @@ module.exports = Service.extend ({
                 thisCertificate.status = 'synced'
             }.bind(thisCertificate));
     
-            // send the request
             request.send();
         }
     },
