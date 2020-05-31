@@ -7,14 +7,14 @@
   >
     <ASidebarBrand class="d-md-down-none" to="/">
       <CIcon 
-        class="c-sidebar-brand-full" 
+        class="a-sidebar-brand-full" 
         name="logo" 
         size="custom-size" 
         :height="35" 
         viewBox="0 0 556 134"
       />
       <CIcon 
-        class="c-sidebar-brand-minimized" 
+        class="a-sidebar-brand-minimized" 
         name="logo" 
         size="custom-size" 
         :height="35" 

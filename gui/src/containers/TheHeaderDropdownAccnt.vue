@@ -1,16 +1,16 @@
 <template>
   <ADropdown
     inNav
-    class="c-header-nav-items"
+    class="a-header-nav-items"
     placement="bottom-end"
     add-menu-classes="pt-0"
   >
     <template #toggler>
       <AHeaderNavLink>
-        <div class="c-avatar">
+        <div class="a-avatar">
           <img
             src="img/avatars/6.jpg"
-            class="c-avatar-img "
+            class="a-avatar-img "
           />
         </div>
       </AHeaderNavLink>
@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style scoped>
-  .c-icon {
+  .a-icon {
     margin-right: 0.3rem;
   }
 </style>

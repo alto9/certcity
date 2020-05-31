@@ -22,26 +22,13 @@ module.exports = {
 
     browser.url(devServer).pause(500).expect.element('body').to.be.present
 
-    browser.waitForElementVisible('.c-app', 2000)
-      .assert.elementPresent('.c-header')
-      .assert.elementPresent('.c-sidebar')
-      .assert.elementPresent('.c-footer')
-      .assert.elementPresent('.c-sidebar')
-      .assert.elementPresent('.c-body')
+    browser.waitForElementVisible('.a-app', 2000)
+      .assert.elementPresent('.a-header')
+      .assert.elementPresent('.a-sidebar')
+      .assert.elementPresent('.a-footer')
+      .assert.elementPresent('.a-sidebar')
+      .assert.elementPresent('.a-body')
       
-    // browser.resizeWindow(700, 800)
-    // browser.expect.element('.c-sidebar').to.have.css('margin-left').which.equals('-256px')
-    // browser.resizeWindow(1900, 800)
-    // browser.expect.element('.c-sidebar').to.have.css('margin-left').which.equals('0px')
-    // browser.pause(1500)
-    // browser.click('.c-sidebar-minimizer')
-    // browser.pause(1000)
-    // browser.expect.element('.c-sidebar').to.have.css('width').which.equals('56px')
-    // browser.click('button.c-header-toggler')
-    // browser.pause(1000)
-    // browser.expect.element('.c-sidebar').to.have.css('margin-left').which.equals('-256px')
-    // browser.pause(1000)
-
     browser.end()
   }
 }

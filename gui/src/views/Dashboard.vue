@@ -389,10 +389,10 @@
               no-sorting
             >
               <td slot="avatar" class="text-center" slot-scope="{item}">
-                <div class="c-avatar">
-                  <img :src="item.avatar.url" class="c-avatar-img" alt="">
+                <div class="a-avatar">
+                  <img :src="item.avatar.url" class="a-avatar-img" alt="">
                   <span
-                    class="c-avatar-status"
+                    class="a-avatar-status"
                     :class="`bg-${item.avatar.status || 'secondary'}`"
                   ></span>
                 </div>

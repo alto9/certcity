@@ -27,7 +27,8 @@
     "release": "npm-run-all clearCache lint build test:unit test:e2e"
   },
   "dependencies": {
-    "@alto9/vue": "https://github.com/alto9/alto9-vue#master",
+    "@alto9/vue": "https://github.com/alto9/alto9-vue-components#master",
+    "@alto9/vue-style": "https://github.com/alto9/alto9-vue-style#master",
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-regular-svg-icons": "^5.13.0",

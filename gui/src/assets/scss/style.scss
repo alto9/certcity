@@ -2,12 +2,12 @@
 @import "variables";
 
 // Import styles
-//@import "~@coreui/coreui/scss/coreui";
+@import "~@alto9/vue-style/scss/alto9";
 
 // If you want to add something do it here
 @import "custom";
 
-.card-header:not(.content-center) > .c-icon:first-child {
+.card-header:not(.content-center) > .a-icon:first-child {
   margin-right: 0.1rem;
   margin-top: 0.1rem;
   vertical-align: top;
