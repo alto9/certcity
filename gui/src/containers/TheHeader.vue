@@ -34,6 +34,7 @@
       <AHeaderNavItem class="d-md-down-none mx-2">
         <AHeaderNavLink>
           <CIcon name="cil-bell"/>
+          <font-awesome-icon icon="user-secret" />
         </AHeaderNavLink>
       </AHeaderNavItem>
       <AHeaderNavItem class="d-md-down-none mx-2">

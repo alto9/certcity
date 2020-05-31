@@ -1,10 +1,10 @@
 <template>
-  <div class="c-app">
+  <div class="a-app">
     <TheSidebar/>
     <AWrapper>
       <TheHeader/>
-      <div class="c-body">
-        <main class="c-main">
+      <div class="a-body">
+        <main class="a-main">
           <AContainer fluid>
             <transition name="fade">
               <router-view></router-view>
